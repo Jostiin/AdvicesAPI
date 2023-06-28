@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container{
+    background-color: hsl(217, 19%, 24%);
+    width: 30rem;
+    height: 20rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+
+.adviceID{
+    color: hsl(150, 100%, 66%);
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+   
+    flex: 2;
+}
+.AdviceTXT{
+    flex: 3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0 3rem;
+    font-size: 20px;
+   
+    padding-top: 15px;
+}
+.btn{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.btnA button{
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    width:3rem;
+    height: 3rem;
+    position: relative;
+    top: 25px;
+    left: 210px;
+    background-image: url("/images/icon-dice.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+.btn div{
+  
+    flex: 1;
+  
+    color: white;
+    
+    background-image: url('/images/pattern-divider-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btnA{
+    flex: 1;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+@media (max-width:490px){
+    .container{
+        width: 22rem;
+    }
+    .btnA button{
+    
+        width:3rem;
+        height: 3rem;
+        
+        top: 30px;
+        left: 140px;
+       
+    }
+}
